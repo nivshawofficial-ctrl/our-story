@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NIVFLIX — an intimate cinematic love letter.">
+  <title>NIVFLIX | Our Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="loader" id="loader" aria-live="polite">
+    <div class="loader__word">NIV<span>FLIX</span></div>
+    <p>Loading your favourite story...</p><div class="progress"><i></i></div>
+  </div>
+
+  <section class="profile-screen" id="profiles" aria-labelledby="profile-title">
+    <div class="profile-screen__glow"></div>
+    <div class="profile-wrap">
+      <button class="brand brand--large logo-trigger" type="button" aria-label="Nivflix logo">NIV<span>FLIX</span></button>
+      <h1 id="profile-title">Who's Watching?</h1>
+      <button class="profile" id="enter-site" type="button" aria-label="Watch as Akshita">
+        <img src="assets/images/photo1.jpg" alt="Akshita" fetchpriority="high">
+        <span>Akshita <b aria-hidden="true">♥</b></span>
+      </button>
+    </div>
+  </section>
+
+  <main id="site" hidden>
+    <header class="nav" id="nav">
+      <button class="brand logo-trigger" type="button" aria-label="Nivflix home">NIV<span>FLIX</span></button>
+      <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#episodes">Our Story</a><a href="#gallery">Memories</a></nav>
+      <button class="nav__heart" type="button" aria-label="My favourite person">♥</button>
+    </header>
+
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__image" role="img" aria-label="A treasured photograph together"></div>
+      <div class="hero__veil"></div>
+      <div class="hero__orb hero__orb--one" aria-hidden="true"></div><div class="hero__orb hero__orb--two" aria-hidden="true"></div>
+      <div class="hero__content reveal">
+        <p class="eyebrow"><span class="live-dot"></span> A NIVFLIX ORIGINAL</p>
+        <h1 id="hero-title">The Girl Who<br>Changed My Life</h1>
+        <p class="hero__copy">Based on one vote...<br>One hello...<br>One name...<br>and countless beautiful memories.</p>
+        <div class="actions"><button class="button button--light episode-open" data-episode="episode-1"><span>▶</span> Play</button><button class="button button--glass" id="favourite"><span>♥</span> My Favourite Person</button></div>
+      </div>
+      <aside class="hero-note reveal" aria-label="Story details"><span>01 — 05</span><p>Our story, still<br>being written.</p><i></i><small>EST. 20.09.2024</small></aside>
+      <a class="scroll-cue" href="#episodes">Scroll to continue <i></i></a>
+    </section>
+
+    <section class="episode-row section" id="episodes" aria-labelledby="episodes-title">
+      <div class="section-heading reveal"><p class="eyebrow">THE SEASONS OF US</p><h2 id="episodes-title">Continue Watching</h2><p>Every episode gets better because you're in it.</p></div>
+      <div class="episode-track" role="list">
+        <article class="episode-card reveal" role="listitem"><button class="episode-open" data-episode="episode-1" aria-label="Open Episode 1, The Day Everything Changed"><img loading="lazy" src="assets/images/photo2.jpg" alt="A moment from the beginning"><span class="card-shade"></span><span class="play-icon">▶</span><div><small>EPISODE 01</small><h3>The Day Everything Changed</h3></div></button></article>
+        <article class="episode-card reveal" role="listitem"><button class="episode-open" data-episode="episode-2" aria-label="Open Episode 2, From Classmates to Us"><img loading="lazy" src="assets/images/photo3.jpg" alt="A memory as classmates"><span class="card-shade"></span><span class="play-icon">▶</span><div><small>EPISODE 02</small><h3>From Classmates to Us</h3></div></button></article>
+        <article class="episode-card reveal" role="listitem"><button class="episode-open" data-episode="episode-3" aria-label="Open Episode 3, Every Moment"><img loading="lazy" src="assets/images/photo4.jpg" alt="A happy shared moment"><span class="card-shade"></span><span class="play-icon">▶</span><div><small>EPISODE 03</small><h3>Every Moment</h3></div></button></article>
+        <article class="episode-card reveal" role="listitem"><button class="episode-open" data-episode="episode-4" aria-label="Open Episode 4, The Little Things"><img loading="lazy" src="assets/images/photo5.jpg" alt="A close, special moment"><span class="card-shade"></span><span class="play-icon">▶</span><div><small>EPISODE 04</small><h3>The Little Things</h3></div></button></article>
+        <article class="episode-card reveal" role="listitem"><button class="episode-open" data-episode="episode-5" aria-label="Open Episode 5, Happy Girlfriend's Day"><img loading="lazy" src="assets/images/photo6.jpg" alt="A celebration together"><span class="card-shade"></span><span class="play-icon">▶</span><div><small>EPISODE 05</small><h3>Happy Girlfriend's Day</h3></div></button></article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading reveal"><p class="eyebrow">FRAME BY FRAME</p><h2 id="gallery-title">The moments I keep<br>replaying</h2></div>
+      <div class="memory-row reveal"><div class="row-title"><h3>Favourite scenes</h3><span>Swipe to explore <b>→</b></span></div><div class="memory-rail" role="list">
+        <button class="memory" data-full="assets/images/photo7.jpg" role="listitem"><img loading="lazy" src="assets/images/photo7.jpg" alt="A favourite scene together"><span>01</span></button><button class="memory" data-full="assets/images/photo8.jpg" role="listitem"><img loading="lazy" src="assets/images/photo8.jpg" alt="A favourite scene together"><span>02</span></button><button class="memory" data-full="assets/images/photo9.jpg" role="listitem"><img loading="lazy" src="assets/images/photo9.jpg" alt="A favourite scene together"><span>03</span></button><button class="memory" data-full="assets/images/photo10.jpg" role="listitem"><img loading="lazy" src="assets/images/photo10.jpg" alt="A favourite scene together"><span>04</span></button><button class="memory" data-full="assets/images/photo11.jpg" role="listitem"><img loading="lazy" src="assets/images/photo11.jpg" alt="A favourite scene together"><span>05</span></button>
+      </div></div>
+      <div class="memory-row reveal"><div class="row-title"><h3>The little things</h3><span>The ones that mean everything <b>♥</b></span></div><div class="memory-rail memory-rail--portrait" role="list">
+        <button class="memory" data-full="assets/images/photo2.jpg" role="listitem"><img loading="lazy" src="assets/images/photo2.jpg" alt="A small treasured moment"><span>06</span></button><button class="memory" data-full="assets/images/photo3.jpg" role="listitem"><img loading="lazy" src="assets/images/photo3.jpg" alt="A small treasured moment"><span>07</span></button><button class="memory" data-full="assets/images/photo4.jpg" role="listitem"><img loading="lazy" src="assets/images/photo4.jpg" alt="A small treasured moment"><span>08</span></button><button class="memory" data-full="assets/images/photo5.jpg" role="listitem"><img loading="lazy" src="assets/images/photo5.jpg" alt="A small treasured moment"><span>09</span></button><button class="memory" data-full="assets/images/photo6.jpg" role="listitem"><img loading="lazy" src="assets/images/photo6.jpg" alt="A small treasured moment"><span>10</span></button>
+      </div></div>
+    </section>
+    <section class="finale" aria-labelledby="finale-title"><div class="finale__light" aria-hidden="true"></div><div class="finale__inner reveal"><p class="eyebrow">THE CREDITS MAY ROLL</p><p class="finale__prelude">But my favourite part?</p><h2 id="finale-title">Every day<br><em>after this.</em></h2><p class="finale__copy">I can't promise to remember every date perfectly.<br>But I will keep choosing you, in every ordinary moment,<br>for the rest of our beautiful story.</p><button class="text-button episode-open" data-episode="episode-5">A letter for you <span>→</span></button><p class="finale__signature">To Akshita, with all my heart. <b>♥</b></p></div></section>
+    <footer><button class="brand logo-trigger" type="button" aria-label="Nivflix logo">NIV<span>FLIX</span></button><p>Streaming the greatest love story ever made.</p><p class="footer-heart">Made with ♥, only for you.</p></footer>
+  </main>
+
+  <div class="episode-modal" id="episode-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="episode-title"><button class="modal-close" aria-label="Close episode">×</button>
+    <section class="episode-view" id="episode-1"><div class="episode-view__photo photo-one"></div><div class="episode-view__story"><p class="eyebrow">EPISODE 01</p><h2 id="episode-title">The Day Everything Changed</h2><div class="story-lines"><p>We were just classmates.</p><p>I was walking around asking everyone for votes because I wanted to become the Class Representative.</p><p>Then I reached you.</p><p>I casually asked your name so I could use it while talking.</p><p>I thought it was just another conversation.</p><p>I never imagined it would become the beginning of my favourite story.</p></div><div class="date">Started dating <strong>20 September 2024</strong></div></div></section>
+    <section class="episode-view" id="episode-2"><div class="episode-view__photo photo-two"></div><div class="episode-view__story"><p class="eyebrow">EPISODE 02</p><h2>From Classmates to Us</h2><div class="story-lines"><p>Some stories don't begin with fireworks.</p><p>They begin with ordinary conversations.</p><p>A smile. A message. A little more time together.</p><p>Before I realised it, you had quietly become the person I looked forward to seeing every single day.</p></div></div></section>
+    <section class="episode-view" id="episode-3"><div class="episode-view__story"><p class="eyebrow">EPISODE 03</p><h2>Every Moment</h2><div class="story-lines"><p>People ask what my favourite memory is.</p><p>Honestly, I don't have one.</p><p>Because every walk. Every selfie. Every random conversation. Every laugh.</p><p>Every little moment with you became my favourite memory.</p></div><div class="episode-montage"><img src="assets/images/photo4.jpg" alt="A favourite memory"><img src="assets/images/photo7.jpg" alt="Another favourite memory"><img src="assets/images/photo9.jpg" alt="A happy memory"></div></div></section>
+    <section class="episode-view" id="episode-4"><div class="episode-view__story"><p class="eyebrow">EPISODE 04</p><h2>The Little Things</h2><p class="intro">All the reasons, and still not enough words.</p><div class="reasons"><span>Your eyes</span><span>Your fluffy cheeks</span><span>Your beautiful hair</span><span>The way you care about me</span><span>Your smile</span><span>Your kindness</span><span>Everything about you</span></div></div></section>
+    <section class="episode-view episode-view--letter" id="episode-5"><div class="letter"><p class="eyebrow">EPISODE 05</p><h2>Happy Girlfriend's Day</h2><p>Maybe I forgot the date...</p><p>But I'll never forget the person who makes every ordinary day worth remembering.</p><p>I know I messed up today.</p><p>So instead of sending just another message, I wanted to build something you could keep.</p><p>Something that reminds you how much you mean to me.</p><p>Thank you for loving me.<br>Thank you for caring for me.<br>Thank you for choosing me every single day.</p><p class="letter__signoff">Happy Girlfriend's Day, Jaanu.<br>I love you more than words can ever explain.<br><b>♥</b></p></div></section>
+  </div>
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Fullscreen memory"><button class="modal-close" aria-label="Close image">×</button><img src="" alt="Fullscreen memory"></div>
+  <div class="secret" id="secret" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="secret-title"><div><button class="modal-close" aria-label="Close secret">×</button><p class="eyebrow">CLASSIFIED</p><h2 id="secret-title">Top Secret <b>♥</b></h2><p>You're still my favourite notification.</p></div></div>
+  <button class="music-button" id="music-toggle" type="button" aria-label="Play our song" hidden><span>♫</span> <span class="music-label">Play Our Song</span></button><audio id="our-song" preload="none" src="assets/music/song.mp3"></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
